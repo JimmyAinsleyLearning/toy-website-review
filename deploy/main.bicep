@@ -17,6 +17,8 @@ param environmentType string
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var processOrderQueueName = 'processorder'
 
+// Mon beau commentaire
+// J'en ajoute un autre
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
   location: location
